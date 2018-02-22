@@ -14,6 +14,10 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .maxWidthAvailable {
     max-width: 1366px;
     width: 100%;
@@ -148,7 +152,7 @@
 }
 
 .btnCoca p {
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Lato, Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 5px 40px;
     color: white !important;
@@ -157,7 +161,8 @@
 
 /*MECANICA*/
 
-#bodyAbanderados.mecanica {
+#bodyAbanderados.mecanica, 
+#bodyAbanderados.comenzar {
     background: #f2f2f2;
     min-height: 400px;
     padding: 25px 0;
@@ -167,15 +172,19 @@
     height: auto;
     padding: 50px;
 }
-
+#bodyAbanderados.comenzar .content {
+    width: 50%;
+    height: auto;
+    padding: 50px 0;
+}
 .content::after {
     content: '';
     clear: both;
     width: 100%;
     display: block;
 }
-
-#bodyAbanderados.mecanica .content .col50 {
+#bodyAbanderados.mecanica .content .col50,
+#bodyAbanderados.comenzar .content col50 {
     width: 50%;
     height: auto;
     position: relative;
@@ -186,7 +195,8 @@
     padding: 20px 40px 20px 0;
 }
 
-#bodyAbanderados.mecanica .content h1 {
+#bodyAbanderados.mecanica .content h1,
+#bodyAbanderados.comenzar .content h1 {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
     font-size: 25px;
     padding: 0;
@@ -194,17 +204,19 @@
     line-height: 50px;
 }
 
-#bodyAbanderados.mecanica .content .col50 h4 {
+#bodyAbanderados.mecanica .content .col50 h4,
+#bodyAbanderados.comenzar .content .col50 h4 {
     color: #E30B17;
     font-size: 36px;
     padding: 20px 0 0px;
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
 
-#bodyAbanderados.mecanica .content .col50 p {
+#bodyAbanderados.mecanica .content .col50 p 
+#bodyAbanderados.comenzar .content .col50 h4{
     color: #242021;
-    font-size: 14px;
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
     line-height: 22px;
 }
 
@@ -346,20 +358,25 @@ div.bloqueParticipante {
 }
 .col50.box {
     background: white;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px;
+    width: 80%;
 }
 .contentDetails {
     padding: 100px;
 }
 .contentDetails p {
-    font-weight: 900;
-    padding: 40px 0;
+    padding: 50px 0;
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
-p.questionTrivia {
-    color: red;
+span.highlightText {
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
-#logoAbanderados.startTrivia{
-    top: -60px;
-    left: 60px;
+#logoAbanderados.startTrivia {
+    top: 0px;
+    left: 80px;
 }
 div#test.btnCoca {
     position:initial;
@@ -368,6 +385,26 @@ div#test.btnCoca {
 div#test.btnCoca span {
     color: white;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
+}
+#countdown {
+    float: right;
+}
+.question p {
+    color:#E30B17;
+    font-size:20px;
+}
+#wcCuestionario1_rblOpciones.promo_respuestas {
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+h5 {
+    color:black;
+}
+.bloqueParticipante a .btnCoca {
+    font-size: 15px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
