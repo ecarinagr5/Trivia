@@ -29,42 +29,86 @@
             <div class="minWidthAvailable content">
                 <div class="col50">
                     <h1>REGISTRA TU TICKET</h1>
-                        <div id="form" class="contenido">
-                            <h5>DATOS DEL PARTICIPANTE</h5>
-                           <div class="campo">
-                                <span>Nombre(s)*</span><br>
-                                <input type="text" name="nombreParticipante" placeholder="Luis Esteban"></input>
+                    <div id="form" class="contenido">
+                            <div class="bloqueParticipante">
+                                    <h5>DATOS DEL PARTICIPANTE</h5>
+                                    <div class="campoCoca">
+                                            <span>Nombre(s)*</span><br>
+                                            <input type="text" name="nombreParticipante" placeholder="Luis Esteban">
+                                    </div> 
+                                    <div class="campoCoca">
+                                            <span>Apellido(s)*</span><br>
+                                            <input type="text" name="apellidoParticipante" placeholder="Luis Esteban">
+                                    </div> 
+                                    <div class="campoCoca">
+                                            <span>Correo electrónico*</span><br>
+                                            <input type="text" name="emailParticipante" placeholder="Luis Esteban">
+                                    </div> 
+                                    <div class="campoCoca">
+                                            <span>Teléfono</span><br>
+                                            <input type="text" name="telefonoParticipante" placeholder="Luis Esteban">
+                                    </div> 
                             </div>
-                            <div class="campo">
-                                    <span>Apellido(s)*</span><br>
-                                    <input type="text" name="apellidoParticipante" placeholder="Luis Esteban"></input>
-                            </div> 
-                            <div class="campo">
-                                    <span>Correo electrónico*</span><br>
-                                    <input type="text" name="emailParticipante" placeholder="Luis Esteban"></input>
-                            </div> 
-                            <div class="campo">
-                                    <span>Teléfono</span><br>
-                                    <input type="text" name="telefonoParticipante" placeholder="Luis Esteban"></input>
-                            </div> 
-                        </div>
+                            <div class="bloqueParticipante">
+                                    <h5>DATOS DEL CANDIDATO A ABANDERADO</h5>
+                                    <div class="campoCoca">
+                                            <span>Nombre(s)*</span><br>
+                                            <input type="text" name="nombreAbandero" placeholder="Nombre">
+                                    </div> 
+                                    <div class="campoCoca">
+                                            <span>Apellido(s)*</span><br>
+                                            <input type="text" name="apellidoAbanderado" placeholder="Apellidos">
+                                    </div> 
+                                    <div class="campoCoca">
+                                            <span>Fecha de Nacimiento*</span><br>
+                                                <select>
+                                                        <option value="1">1</option>
+                                                </select>
+                                                <select>
+                                                        <option value="Enero">Enero</option>
+                                                </select>
+                                                <select>
+                                                        <option value="Enero">2004</option>
+                                                </select>
+                                    </div> 
+                            </div>
+                    </div>
                 </div>
                 <div class="col50">
-                    <h4>1</h4>
-                    <p>Compra <strong>$100.00</strong> o más de productos de las marcas participantes: <strong>Coca-Cola, Coca-Cola Sin Azúcar, Coca-Cola Light, Powerade</strong> y/o <strong>Powerade Zero</strong> en cualquiera de sus presentaciones de venta en <strong>Walmart Supercenter, Bodega Aurrerá, Mi Bodega, Bodega Aurrerá Express, Superama</strong> y <strong>Sam's</strong>.</p>
-                    
-                    <h4>2</h4>
-                    <p><strong>Registra</strong> tus datos completos y <strong>ticket</strong> o <strong>folio de compra</strong>.</p>
-
-                    <h4>3</h4>
-                    <p><strong>Contesta la trivia</strong> correctamente en el menor tiempo posible y podrás ser <strong>abanderado</strong>  en uno de los partidos de México en <strong>Rusia 2018</strong>.</p>
-                    <p><br><br></p>
-                    <div class="btnCoca default">
-                        <p>Participa</p>
+                        <div id="form" class="contenido lado">
+                                <div class="bloqueParticipante">
+                                        <h5>DATOS DEL PADRE O TUTOR</h5>
+                                        <div class="campoCoca">
+                                                <span>Nombre(s)*</span><br>
+                                                <input type="text" name="apellidoPadre" placeholder="Luis Esteban">
+                                        </div> 
+                                        <div class="campoCoca">
+                                                <span>Apellido(s)*</span><br>
+                                                <input type="text" name="apellidoPadre" placeholder="Luis Esteban">
+                                        </div> 
+                                </div>
+                                <div class="bloqueParticipante">
+                                        <div class="campoCoca ticketForm">
+                                                <span class="titleTickeF">NÚMERO DEL TICKET</span><br>
+                                                <input type="text" name="ticket" placeholder="TC JDSFSDFGDS JSDKGSDG"><br>
+                                                <span class="leyenda">Leyenda sobre verificación positiva o negativa del número de ticket</span>
+                                        </div> 
+                                </div>
+                                <div class="bloqueParticipante">
+                                        <div class="campoCoca">
+                                                <input type="radio" name="terminos" value="acepto">He leído y estoy de acuerdo con los <a href="">Términos y Condiciones</a><br>
+                                        </div>  
+                                </div>
+                                <div class="bloqueParticipante">
+                                        <div id="test" class="btnCoca">
+                                                <p>Comenzar la Trivia</p>
+                                        </div>
+                                </div>
+                        </div>
                     </div>
             </div>
-            </div>
-            <div class="clearContent"></div>
+    </div>
+        <div class="clearContent"></div>
             <div id="footerAbanderados">
                 <div id="footerAbanderados" class="maxWidthAvailable">
                     <h2><strong>Estamos cerca de ti,</strong> somos el <strong>Centro de Atención al Consumidor de Coca Cola</strong>, con gusto te atenderemos en:</h2>                
