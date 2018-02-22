@@ -20,16 +20,33 @@
                                 <img src="img/logoCocaBalon.png" alt="Logo Coca Cola" width="150" height="150">
                             </div>
                          </div>
-                         <div class="contentDetails">
-                            <h1>¡COMIENZA LA TRIVIA!</h1>
-                            <p> Sólo tiene 20 segundos por pregunta.<br>
-                                Entre menos tiempo tardes en responder más oportunidades de ganar, consectetur adispiscing elit, ut enim ad minim venian.
-                            </p>
-                            <a href="preguntas_de_Trivia.html">
-                                <div id="test" class="btnCoca">
-                                        <span>Comenzar</span>
+                        <div id="wcCuestionario1_DivPreguntas">
+                            <!--TIMER-->
+                                <div>
+                                    <div id="countdown"><canvas id="countdown360_countdown" width="150" height="150"></canvas></div>
                                 </div>
-                            </a>
+                            <!--PREGUNTAS-->
+                                <div class="promo_preguntas">
+                                    <div class="question">
+                                        <p style="margin-bottom: 20px;">
+                                            <span class="numero">
+                                                <span id="wcCuestionario1_lblNumeroPregunta">3</span>
+                                            </span>
+                                            <span id="wcCuestionario1_lblPregunta">¿Cuál es la variante de Coca-Cola sin calorías que tiene más tiempo en el mercado?</span>
+                                        </p>
+                                    <table id="wcCuestionario1_rblOpciones" class="promo_respuestas" cellpadding="10" border="0">
+                                        <tbody><tr>
+                                                <td><input id="wcCuestionario1_rblOpciones_0" type="radio" name="wcCuestionario1$rblOpciones" value="A"><label for="wcCuestionario1_rblOpciones_0">     Coca-Cola Light</label></td>
+                                        </tr><tr>
+                                                <td><input id="wcCuestionario1_rblOpciones_1" type="radio" name="wcCuestionario1$rblOpciones" value="B"><label for="wcCuestionario1_rblOpciones_1">     Coca-Cola Zero</label></td>
+                                        </tr><tr>
+                                                <td><input id="wcCuestionario1_rblOpciones_2" type="radio" name="wcCuestionario1$rblOpciones" value="C"><label for="wcCuestionario1_rblOpciones_2">     Coca-Cola Life</label></td>
+                                        </tr>
+                                    </tbody></table>
+                                        <input id="test" type="submit" name="wcCuestionario1$btnSiguiente" value="Siguiente pregunta" onclick="ImagenAleatoria();" id="wcCuestionario1_btnSiguiente" class="btnCoca" style="width:227px;height:52px;font-weight:normal;font-size:18px;font-family:OpenSans-Bold;color:White;border-style:None;border-color:Red;background-color:Red;cursor: pointer;">   
+                                        </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
             </div>

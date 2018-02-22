@@ -354,6 +354,9 @@ div.bloqueParticipante {
     font-weight: 900;
     padding: 40px 0;
 }
+p.questionTrivia {
+    color: red;
+}
 #logoAbanderados.startTrivia{
     top: -60px;
     left: 60px;
