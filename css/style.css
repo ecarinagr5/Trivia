@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @font-face {
     font-family: 'Gotham';
-    src: url('webfont/Gotham-Black.eot');
-    src: url('webfont/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('webfont/Gotham-Black.woff2') format('woff2'), url('webfont/Gotham-Black.woff') format('woff'), url('webfont/Gotham-Black.ttf') format('truetype'), url('webfont/Gotham-Black.svg#Gotham-Black') format('svg');
+    src: url('.../webfont/Gotham-Black.eot');
+    src: url('.../webfont/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('.../webfont/Gotham-Black.woff2') format('woff2'), url('.../webfont/Gotham-Black.woff') format('woff'), url('.../webfont/Gotham-Black.ttf') format('truetype'), url('.../webfont/Gotham-Black.svg#Gotham-Black') format('svg');
     font-weight: 500;
     font-style: normal;
 }
@@ -10,6 +10,10 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1.titleFeatured {
@@ -189,6 +193,64 @@ h1.titleAbanderados {
 
 /*MECANICA*/
 
+#bodyAbanderados.mecanica,
+#bodyAbanderados.comenzar {
+    background: #f2f2f2;
+    min-height: 400px;
+    padding: 25px 0;
+}
+
+#bodyAbanderados.mecanica .content {
+    height: auto;
+    padding: 50px;
+}
+
+#bodyAbanderados.comenzar .content {
+    width: 50%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.content::after {
+    content: '';
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+#bodyAbanderados.mecanica .content .col50,
+#bodyAbanderados.comenzar .content .col50 {
+    width: 50%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+
+#bodyAbanderados.mecanica .content h1,
+#bodyAbanderados.comenzar .content h1 {
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+#bodyAbanderados.mecanica .content .col50 h4,
+#bodyAbanderados.comenzar .content .col50 h4 {
+    color: #E30B17;
+    font-size: 36px;
+    padding: 20px 0 0px;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+}
+
+#bodyAbanderados.mecanica .content .col50 p,
+#bodyAbanderados.comenzar .content .col50 h4 {
+    color: #242021;
+    font-size: 16px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    line-height: 22px;
+}
+
 .containerAir {
     clear: both;
     padding: 30px 40px;
@@ -250,11 +312,14 @@ h1.titleAbanderados {
     margin: 0 auto;
     background: white;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.85);
-    -moz-box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.85);
-    box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.85);
 }
 
+.boxShadowCoca {
+    padding: 40px;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+}
 
 /*RANKING*/
 
@@ -341,10 +406,119 @@ h1.titleAbanderados {
     min-height: 50px;
 }
 
-.form {
-    padding: 30px 0;
+#form.contenido {
+    padding: 30px 0px;
+    width: 98%;
+    border-right: 1px solid #e6e6e6;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
-.campo {
+div.bloqueParticipante {
+    width: 100%;
+    padding: 30px 0;
+    clear: both;
+}
+
+#form.contenido.lado {
+    padding: 80px 0px;
+    border-right: 0px;
+}
+
+#form.contenido .campoCoca {
+    padding: 10px 30px;
     float: left;
+}
+
+#form.contenido .campoCoca.ticketForm {
+    text-align: center;
+}
+
+#form.contenido .campoCoca span {
+    font-size: 12px;
+    color: #989898;
+}
+
+#form.contenido .campoCoca span.leyenda {
+    color: #bf0808;
+    padding: 5px 0;
+}
+
+#form.contenido .campoCoca span.titleTickeF {
+    text-align: center;
+    color: black;
+    text-align: center;
+}
+
+#form.contenido .campoCoca input {
+    font-size: 13px;
+    padding: 4px;
+    margin-top: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.col50.box {
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px;
+    width: 80%;
+}
+
+.contentDetails {
+    padding: 100px;
+}
+
+.contentDetails p {
+    padding: 50px 0;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+span.highlightText {
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+}
+
+#logoAbanderados.startTrivia {
+    top: 0px;
+    left: 80px;
+}
+
+div#test.btnCoca {
+    position: initial;
+    text-align: center;
+}
+
+div#test.btnCoca span {
+    color: white;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+#countdown {
+    float: right;
+}
+
+.question p {
+    color: #E30B17;
+    font-size: 20px;
+}
+
+#wcCuestionario1_rblOpciones.promo_respuestas {
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+h5 {
+    color: black;
+}
+
+.bloqueParticipante a .btnCoca {
+    font-size: 15px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
