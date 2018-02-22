@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head prefix="og: http://ogp.me/ns#">
+    <title>Comenzar Trivia</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/style.css" rel="stylesheet"/>    
+    <script src="js/jquery-1.11.2.min.js"></script>
+
+</head>
+
+<body>
+    <div id="bodyAbanderados" class="comenzar">
+            <div class="maxWidthAvailable content">
+                <div class="col50 box">
+                    <div id="logoAbanderados" class="startTrivia">
+                        <img src="img/logoCocaBalon.png" alt="Logo Coca Cola" width="150" height="150">
+                    </div>
+                         <div class="contentDetails">
+                        <!--TIMER-->
+                            <div>
+                                <div id="countdown"><canvas id="countdown360_countdown" width="150" height="150"></canvas></div>
+                            </div>
+                            <!--PREGUNTAS-->
+                                <div class="promo_preguntas">
+                                    <div class="question">
+                                        <p>
+                                            <span class="numero">
+                                            <span id="wcCuestionario1_lblNumeroPregunta">3</span>
+                                            </span>
+                                            <span id="wcCuestionario1_lblPregunta">¿Cuál es la variante de Coca-Cola sin calorías que tiene más tiempo en el mercado?</span>
+                                        </p>
+                                    <table id="wcCuestionario1_rblOpciones" class="promo_respuestas" cellpadding="10" border="0">
+                                        <tbody><tr>
+                                                <td><input id="wcCuestionario1_rblOpciones_0" type="radio" name="wcCuestionario1$rblOpciones" value="A"><label for="wcCuestionario1_rblOpciones_0">     Coca-Cola Light</label></td>
+                                        </tr><tr>
+                                                <td><input id="wcCuestionario1_rblOpciones_1" type="radio" name="wcCuestionario1$rblOpciones" value="B"><label for="wcCuestionario1_rblOpciones_1">     Coca-Cola Zero</label></td>
+                                        </tr><tr>
+                                                <td><input id="wcCuestionario1_rblOpciones_2" type="radio" name="wcCuestionario1$rblOpciones" value="C"><label for="wcCuestionario1_rblOpciones_2">     Coca-Cola Life</label></td>
+                                        </tr>
+                                        </tbody></table>
+                                                <input id="test" type="submit" name="wcCuestionario1$btnSiguiente" value="Siguiente pregunta" onclick="ImagenAleatoria();" id="wcCuestionario1_btnSiguiente" class="btnCoca" style="width:227px;height:52px;font-weight:normal;font-size:18px;font-family:OpenSans-Bold;color:White;border-style:None;border-color:Red;background-color:Red;cursor: pointer;">   
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="clearContent"></div>
+            <div id="footerAbanderados">
+                <div id="footerAbanderados" class="maxWidthAvailable">
+                    <h2><strong>Estamos cerca de ti,</strong> somos el <strong>Centro de Atención al Consumidor de Coca Cola</strong>, con gusto te atenderemos en:</h2>                
+                    <div id="contactAbanderados">
+                        <div class="clearAbanderados contactItem">
+                        </div>
+                        <div class="contactItem">
+                            <h4>CORREO</h4>
+                            <h5>consumidor@coca-cola.com</h5>
+                        </div>
+                        <div class="contactItem">
+                            <h4>TELÉFONO</h4>
+                            <h5>01 800 704 4400</h5>
+                        </div>
+                        <div class="contactItem">
+                            <h4>DIRECCIÓN</h4>
+                            <h5>Rubén Dario 115, Bosque de Chapultepec</h5>
+                        </div>
+                        <div class="contactItem">
+                            <h4>TWITTER</h4>
+                            <h5>@HolaCocaCola</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</body>
+
+<script>
+    $(window).load(function() {
+        //Fires when the page is loaded completely
+        // alert("window is loaded");
+
+    });
+    // $(document).ready(function() {
+
+    // Code to be executed
+//     alert("Document is ready");
+// });
+
+</script>
+
+</html>
