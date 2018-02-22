@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @font-face {
     font-family: 'Gotham';
-    src: url('.../webfont/Gotham-Black.eot');
-    src: url('.../webfont/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('.../webfont/Gotham-Black.woff2') format('woff2'), url('.../webfont/Gotham-Black.woff') format('woff'), url('.../webfont/Gotham-Black.ttf') format('truetype'), url('.../webfont/Gotham-Black.svg#Gotham-Black') format('svg');
+    src: url('../webfont/Gotham-Black.eot');
+    src: url('../webfont/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('../webfont/Gotham-Black.woff2') format('woff2'), url('../webfont/Gotham-Black.woff') format('woff'), url('../webfont/Gotham-Black.ttf') format('truetype'), url('../webfont/Gotham-Black.svg#Gotham-Black') format('svg');
     font-weight: 500;
     font-style: normal;
 }
