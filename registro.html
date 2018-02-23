@@ -26,7 +26,7 @@
         </div>
     </div>
     <div id="bodyAbanderados" class="mecanica">
-            <div class="minWidthAvailable clearBoth boxShadowCoca">
+            <div class="maxWidthAvailable content registroClass">
                 <div class="col50">
                     <h1>REGISTRA TU TICKET</h1>
                     <div id="form" class="contenido">
@@ -59,7 +59,7 @@
                                         <span>Apellido(s)*</span><br>
                                         <input type="text" name="apellidoAbanderado" placeholder="Apellidos">
                                     </div> 
-                                    <div class="campoCoca">
+                                    <div class="campoCoca optionDateC">
                                         <span>Fecha de Nacimiento*</span><br>
                                          <select>
                                                 <option value="1">1</option>
@@ -87,27 +87,26 @@
                 </div>
                 <div class="col50">
                         <div id="form" class="contenido lado">
-                                <div class="bloqueParticipante">
+                                <div class="bloqueParticipante ticketBloque">
                                         <div class="campoCoca ticketForm">
                                                 <span class="titleTickeF">NÚMERO DEL TICKET</span><br>
-                                                <input type="text" name="ticket" placeholder="TC JDSFSDFGDS JSDKGSDG"><br>
+                                                <input type="text" name="ticketInitial" placeholder="TC JDSFSDFGDS JSDKGSDG"><br>
                                                 <span class="leyenda">Leyenda sobre verificación positiva o negativa del número de ticket</span>
                                         </div> 
                                 </div>
                                 <div class="bloqueParticipante">
-                                        <div class="campoCoca">
-                                                <input type="radio" name="terminos" value="acepto">He leído y estoy de acuerdo con los <a href="">Términos y Condiciones</a><br>
+                                        <div class="campoCoca ticketForm">
+                                            <input type="radio" name="terminos" value="acepto" class="aceptoClass">
+                                            <span>He leído y estoy de acuerdo con los <a href="">Términos y Condiciones</a></span>
+                                            <a href="comenzarTrivia.html">
+                                                 <div id="test" class="btnCoca registrobtn">
+                                                    <p>Comenzar la Trivia</p>
+                                                 </div>
+                                            </a>
                                         </div>  
                                 </div>
-                                <div class="bloqueParticipante">
-                                        <a href="comenzarTrivia.html">
-                                                <div id="test" class="btnCoca">
-                                                        <p>Comenzar la Trivia</p>
-                                                </div>
-                                        </a>
-                                </div>
-                                <div class="bloqueParticipante">
-                                    <span>Recuerda que solo tiene 20 segundos por pregunta y que al final de la trivia se genera tu folio identificador.</span>
+                                <div class="bloqueParticipante textRemember">
+                                    <span>Recuerda que solo tiene 20 segundos por pregunta</span> y que al final de la trivia se genera tu folio identificador.
                                 </div>
                         </div>
                     </div>
