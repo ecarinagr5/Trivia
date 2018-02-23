@@ -161,8 +161,7 @@ a {
 
 /*MECANICA*/
 
-#bodyAbanderados.mecanica, 
-#bodyAbanderados.comenzar {
+#bodyAbanderados.mecanica {
     background: #f2f2f2;
     min-height: 400px;
     padding: 25px 0;
@@ -183,8 +182,7 @@ a {
     width: 100%;
     display: block;
 }
-#bodyAbanderados.mecanica .content .col50,
-#bodyAbanderados.comenzar .content col50 {
+#bodyAbanderados.mecanica .content .col50 {
     width: 50%;
     height: auto;
     position: relative;
@@ -254,8 +252,24 @@ a {
     -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
 }
+/*COMENZAR TRIVIA*/
 
-
+#bodyAbanderados.comenzar {
+    background: url("/Users/carinagonzalez/Desktop/coca/Trivia/img/Coke_assets_1.jpg");
+    min-height: 400px;
+    padding: 25px 0 0 0;
+}
+#bodyAbanderados.comenzar .content {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 65px 25px;
+}
+#bodyAbanderados.comenzar .content .col50 {
+    width: 50%;
+    height: auto;
+    float: left;
+}
 /*FOOTER*/
 
 .clearContent {
@@ -322,17 +336,37 @@ div.bloqueParticipante {
     width: 100%;
     padding: 30px 0;
     clear: both;
+    overflow: auto;
 }
 #form.contenido.lado {
     padding:80px 0px;
     border-right:0px;
 }
 #form.contenido .campoCoca {
-    padding: 10px 30px;
+    padding: 10px;
     float:left;
+    max-width: 250px;
+    width: 100%;
+}
+#form.contenido .campoCoca.optionDateC {
+    padding: 10px;
+    float:left;
+    max-width: 500px;
+    width: 100%;
 }
 #form.contenido .campoCoca.ticketForm {
     text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+#form.contenido .campoCoca.ticketForm input.aceptoClass {
+    text-align: center;
+    width: 0;
+}
+#form.contenido .campoCoca.ticketForm span {
+    color:black;
+    padding-left: 10px;
+    font-size: 14px;
 }
 #form.contenido .campoCoca span {
     font-size:12px;
@@ -347,14 +381,23 @@ div.bloqueParticipante {
     color: black;
     text-align: center;
 }
-#form.contenido .campoCoca input {
-    font-size:13px;
-    padding: 4px;
+#form.contenido .campoCoca input, select {
+    font-size:18px;
     margin-top: 5px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #989890;
+    padding: 4px;
     width: 100%;
+    text-align: center;
+}
+#form.contenido .campoCoca select {
+    width: 32.888%;
+    background: white;
+}
+#form.contenido .campoCoca select option {
+    padding: 4px;
 }
 .col50.box {
     background: white;
@@ -362,7 +405,6 @@ div.bloqueParticipante {
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px;
-    width: 80%;
 }
 .contentDetails {
     padding: 100px;
@@ -407,4 +449,8 @@ h5 {
     font-size: 15px;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-weight: normal;
+}
+.bloqueParticipante.textRemember {
+text-align: center;
+font-size: 14px;
 }
