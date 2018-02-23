@@ -732,10 +732,6 @@ div#test.btnCoca span {
 span.highlightText {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
-#logoAbanderados.startTrivia {
-    top: 0px;
-    left: 80px;
-}
 div#test.btnCoca {
     position: initial;
     text-align: center;
