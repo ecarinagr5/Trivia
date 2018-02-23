@@ -209,8 +209,8 @@ a {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
 
-#bodyAbanderados.mecanica .content .col50 p 
-#bodyAbanderados.comenzar .content .col50 h4{
+#bodyAbanderados.mecanica .content .col50 p, 
+#bodyAbanderados.comenzar .content .col50 h4 {
     color: #242021;
     font-size: 16px;
     font-family: Lato, Arial, Helvetica, sans-serif;
