@@ -456,6 +456,11 @@ div#test.btnCoca {
     position:initial;
     text-align: center;
 }
+div#test.btnCoca.registrobtn {
+    position:initial;
+    text-align: center;
+    margin: 0 auto;
+}
 div#test.btnCoca span {
     color: white;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -481,6 +486,7 @@ h5 {
     font-size: 15px;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-weight: normal;
+    margin: 40px 0;
 }
 .bloqueParticipante.textRemember {
 text-align: center;
