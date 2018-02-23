@@ -136,7 +136,6 @@ a {
 .btnCoca {
     background: #E30B17;
     width: 210px;
-    height: 25px;
     position: absolute;
     padding: 10px;
     left: 50px;
@@ -253,7 +252,6 @@ a {
     box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
 }
 /*COMENZAR TRIVIA*/
-
 #bodyAbanderados.comenzar {
     background: url("/Users/carinagonzalez/Desktop/coca/Trivia/img/Coke_assets_1.jpg");
     min-height: 400px;
@@ -270,6 +268,40 @@ a {
     height: auto;
     float: left;
 }
+
+/*QUESTIONS TRIVIA*/
+#bodyAbanderados.questionsTrivia {
+    background: url("/Users/carinagonzalez/Desktop/coca/Trivia/img/Coke_assets_1.jpg");
+    min-height: 400px;
+    padding: 25px 0 0 0;
+}
+#bodyAbanderados.questionsTrivia .content {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 65px 25px;
+}
+#bodyAbanderados.questionsTrivia .content .col50 {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+input#test.questionsT {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    background: #E30B17;
+    width: 210px;
+    padding: 10px;
+    left: 50px;
+    border: 0px;
+    font-size: 15px;
+    border-radius: 43px 43px 43px 43px;
+    -moz-border-radius: 43px 43px 43px 43px;
+    -webkit-border-radius: 43px 43px 43px 43px;
+    cursor: pointer;
+    color: #f2f2f2;
+    margin-top: 40px;
+}
+
 /*FOOTER*/
 
 .clearContent {
