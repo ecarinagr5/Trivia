@@ -799,6 +799,6 @@ div#test.btnCoca.results p  {
    padding: 0;
    font-size: 15px;
 }
-p.ranking {
-    text-align: center;
+div.rankingP p {
+   color:red;
 }
