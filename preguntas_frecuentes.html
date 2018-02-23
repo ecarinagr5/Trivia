@@ -88,8 +88,13 @@
         // alert("window is loaded");
         var question = $('.question');
         question.on('click', function () {
-            $('.answer').hide();
-            $('.' + this.id).fadeIn();
+            var isActive = $('#' + this.id).hasClass('active');
+            if (!isActive) {
+                $('.answer').hide();
+                $('.question').removeClass('active');
+                $('#' + this.id).addClass('active');
+                $('.' + this.id).fadeIn();
+            }
         });
 
     });

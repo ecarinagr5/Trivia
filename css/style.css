@@ -324,13 +324,35 @@ div#test.btnCoca.registrobtn {
     border-bottom: 1px solid #ededed;
 }
 
-.col50 .faq h2 {
+.col50 .faq h2.question {
     font-weight: normal;
     font-family: Lato-Bold, Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 22px;
     padding-bottom: 10px;
+    padding-right: 40px;
     cursor: pointer;
+    position: relative;
+}
+
+.col50 .faq h2.question::after {
+    content: '+';
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    color: white;
+    background: #E30B17;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 26px;
+    font-family: Lato-Regular, Arial, Helvetica, sans-serif;
+}
+.col50 .faq h2.question.active::after {
+    content: '-';
 }
 
 .col50 .faq p {
@@ -674,80 +696,122 @@ div#test.btnCoca span {
 }
 
 #form.contenido .campoCoca input, select {
-        font-size: 13px;
-        padding: 4px;
-        margin-top: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 4px;
-        border: 1px solid #989890;
-        padding: 8px;
+    font-size: 13px;
+    padding: 4px;
+    margin-top: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 4px;
+    border: 1px solid #989890;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+#form.contenido .campoCoca select {
+    width: 32.888%;
+    background: white;
+}
+#form.contenido .campoCoca select option {
+    padding: 4px;
+}
+.col50.box {
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px;
+}
+.contentDetails {
+    padding: 100px;
+}
+.contentDetails p {
+    padding: 50px 0;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+span.highlightText {
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+}
+#logoAbanderados.startTrivia {
+    top: 0px;
+    left: 80px;
+}
+div#test.btnCoca {
+    position: initial;
+    text-align: center;
+}
+div#test.btnCoca span {
+    color: white;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+#wcCuestionario1_rblOpciones.promo_respuestas {
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+h5 {
+    color: black;
+}
+.bloqueParticipante a .btnCoca {
+    font-size: 15px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 40px 0;
+}
+.bloqueParticipante.textRemember {
+    text-align: center;
+    font-size: 16px;
+}
+.bloqueParticipante.textRemember span {
+    font-weight: 900;
+}
+
+@media screen and (max-width: 640px) {
+    #ranking table td {
+        float: left;
+        padding: 0;
         width: 100%;
-        text-align: center;
-        color: black;
+        text-align: left;
     }
-    #form.contenido .campoCoca select {
-        width: 32.888%;
-        background: white;
+    #ranking table thead {
+        display: none;
     }
-    #form.contenido .campoCoca select option {
-        padding: 4px;
+    #ranking table tbody tr:nth-child(1) {
+        border-top: 0px solid black;
     }
-    .col50.box {
-        background: white;
-        border-radius: 10px 10px 10px 10px;
-        -moz-border-radius: 10px 10px 10px 10px;
-        -webkit-border-radius: 10px 10px 10px 10px;
-        border: 0px;
+    #ranking table td:nth-child(1) {
+        padding-top: 10px;
     }
-    .contentDetails {
-        padding: 100px;
+  
+    #ranking table td:nth-child(6) {
+        padding-bottom: 10px;
     }
-    .contentDetails p {
-        padding: 50px 0;
-        font-family: Lato, Arial, Helvetica, sans-serif;
-    }
-    span.highlightText {
-        font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
-    }
-    div#test.btnCoca {
-        position: initial;
-        text-align: center;
-    }
-    div#test.btnCoca span {
-        color: white;
-        font-family: 'Lato', Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        text-align: center;
-    }
-    #countdown {
-        float: right;
-    }
-    .question p {
+    #ranking table td::before {
+        padding-right: 10px;
         color: #E30B17;
-        font-size: 20px;
     }
-    #wcCuestionario1_rblOpciones.promo_respuestas {
-        font-size: 20px;
-        line-height: 40px;
-        font-family: 'Lato', Arial, Helvetica, sans-serif;
+    #ranking table td:nth-child(1)::before {
+        content: 'Posición:';
     }
-    h5 {
-        color: black;
+    #ranking table td:nth-child(2)::before {
+        content: 'Folio:';
     }
-    .bloqueParticipante a .btnCoca {
-        font-size: 15px;
-        font-family: 'Lato', Arial, Helvetica, sans-serif;
-        font-weight: normal;
-        margin: 40px 0;
+    #ranking table td:nth-child(3)::before {
+        content: 'Tiempo:';
     }
-    .bloqueParticipante.textRemember {
-        text-align: center;
-        font-size: 16px;
+    #ranking table td:nth-child(4)::before {
+        content: 'Aciertos:';
     }
-    .bloqueParticipante.textRemember span {
-        font-weight: 900;
+    #ranking table td:nth-child(5)::before {
+        content: 'Fecha:';
     }
+    #ranking table td:nth-child(6)::before {
+        content: 'Hora:';
+    }
+}
+
 /*RESULTADOS*/
 #bodyAbanderados.results {
     background: #130D0D;
