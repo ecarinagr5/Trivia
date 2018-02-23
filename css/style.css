@@ -191,14 +191,14 @@ h1.titleAbanderados {
 }
 
 
-/*MECANICA*/
-#bodyAbanderados.mecanica {
+/*REGISTRO*/
+#bodyAbanderados.registro {
     background: #f2f2f2;
     min-height: 400px;
     padding: 25px 0;
 }
 
-#bodyAbanderados.mecanica .content {
+#bodyAbanderados.registro .content {
     height: auto;
     padding: 50px;
 }
@@ -216,14 +216,14 @@ h1.titleAbanderados {
     display: block;
 }
 
-#bodyAbanderados.mecanica .content .col50 {
+#bodyAbanderados.registro .content .col50 {
     width: 50%;
     height: auto;
     position: relative;
     float: left;
 }
 
-#bodyAbanderados.mecanica .content h1,
+#bodyAbanderados.registro .content h1,
 #bodyAbanderados.comenzar .content h1 {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -232,7 +232,7 @@ h1.titleAbanderados {
     line-height: 50px;
 }
 
-#bodyAbanderados.mecanica .content .col50 h4,
+#bodyAbanderados.registro .content .col50 h4,
 #bodyAbanderados.comenzar .content .col50 h4 {
     color: #E30B17;
     font-size: 36px;
@@ -240,7 +240,7 @@ h1.titleAbanderados {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
 
-#bodyAbanderados.mecanica .content .col50 p, 
+#bodyAbanderados.registro .content .col50 p, 
 #bodyAbanderados.comenzar .content .col50 h4 {
     color: #242021;
     font-size: 16px;
@@ -253,6 +253,22 @@ h1.titleAbanderados {
     padding: 30px 40px;
     min-height: 500px;
     padding: 40px;
+}
+.registroClass {
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
+}
+div#test.btnCoca.registrobtn {
+    position:initial;
+    text-align: center;
+    margin: 20px auto;
+}
+.ticketBloque {
+    margin-top: 100px;
 }
 
 #mecanica {
@@ -349,44 +365,34 @@ h1.titleAbanderados {
     border-top: 1px solid #D8D8D8;
     text-align: center;
 }
-/*REGISTRO*/
-.registroClass {
-    margin: 0 auto;
-    background: white;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
-}
-div#test.btnCoca.registrobtn {
-    position:initial;
-    text-align: center;
-    margin: 20px auto;
-}
-.ticketBloque {
-    margin-top: 100px;
-}
+
 /*COMENZAR TRIVIA*/
 #bodyAbanderados.comenzar {
-    background: url("/Users/vn0t8wo/Desktop/CocaCola/ws/Trivia/Trivia/img/Coke_assets_1.jpg") no-repeat;
     min-height: 400px;
+}
+#bodyAbanderados.comenzar .bodyBackground {
+    background: url(../img/Coke_assets_1.jpg) no-repeat;
     padding: 25px 0 0 0;
+    max-width: 1366px;
+    width: 100%;
 }
 #bodyAbanderados.comenzar .content {
     width: 100%;
     height: auto;
     float: left;
-    padding: 65px 25px;
+    padding: 100px 25px;
 }
 #bodyAbanderados.comenzar .content .col50 {
     width: 50%;
     height: auto;
     float: left;
 }
-
+#bodyAbanderados.comenzar .content .col50.box {
+    margin-top: 10px;
+}
 /*QUESTIONS TRIVIA*/
 #bodyAbanderados.questionsTrivia {
-    background: url("/Users/vn0t8wo/Desktop/CocaCola/ws/Trivia/Trivia/img/Coke_assets_2.jpg") no-repeat;
+    background: url(../img/Coke_assets_2.jpg) no-repeat;
     min-height: 400px;
     padding: 25px 0 0 0;
 }
@@ -533,10 +539,9 @@ div.bloqueParticipante {
     color: black;
     text-align: center;
 }
-#form.contenido .campoCoca input, select { {
+#form.contenido .campoCoca input, select {
     font-size: 13px;
     padding: 4px;
-
     margin-top: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
