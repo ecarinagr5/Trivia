@@ -1,6 +1,4 @@
- 
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
 @font-face {
     font-family: 'Gotham';
     src: url('../webfont/Gotham-Black.eot');
@@ -16,6 +14,22 @@
 
 a {
     text-decoration: none;
+}
+
+h1.titleFeatured {
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+h1.titleAbanderados {
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    line-height: 50px;
 }
 
 .maxWidthAvailable {
@@ -54,6 +68,7 @@ a {
     position: absolute;
     top: 0px;
     right: 200px;
+    z-index: 1;
 }
 
 #headerAbanderados #navMainAbanderados {
@@ -98,48 +113,22 @@ a {
     }
 }
 
-
-/*HOME*/
-
-#bodyAbanderados.home {
-    background: #242021;
-    min-height: 400px;
-}
-
-#bodyAbanderados.home .content {
-    height: 400px;
-}
-
-#bodyAbanderados.home .content .col50 {
+#bodyAbanderados .col50 {
     width: 50%;
-    height: 400px;
     position: relative;
     float: left;
 }
 
-#bodyAbanderados.home .content .col50::after {
-    content: '';
-    clear: both;
+#bodyAbanderados .colFull {
     width: 100%;
-    display: block;
-}
-
-#bodyAbanderados.home .content .col50 h1 {
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: white;
-    padding: 100px 50px 10px;
-    text-transform: uppercase;
-    line-height: 50px;
 }
 
 .btnCoca {
     background: #E30B17;
     width: 210px;
     height: 25px;
-    position: absolute;
+    position: relative;
     padding: 10px;
-    left: 50px;
     border-radius: 43px 43px 43px 43px;
     -moz-border-radius: 43px 43px 43px 43px;
     -webkit-border-radius: 43px 43px 43px 43px;
@@ -154,14 +143,57 @@ a {
 .btnCoca p {
     font-family: Lato, Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 5px 40px;
+    padding: 0 40px !important;
     color: white !important;
+}
+
+#bodyAbanderados>*,
+.container {
+    box-sizing: border-box;
+}
+
+.clearBoth::after {
+    content: '';
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+#bodyAbanderados {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+
+/*HOME*/
+
+#bodyAbanderados.home {
+    background: #130D0D;
+}
+
+#bodyAbanderados.home .featured {
+    padding: 50px 0 20px 100px;
+    min-height: 600px;
+    background: url(../img/home-img01.jpg) no-repeat;
+}
+
+#featuredContent {
+    padding-bottom: 50px;
+}
+
+.content {
+    padding: 50px 0 20px 0;
+}
+
+#bodyAbanderados.home .featured p {
+    line-height: 26px;
+    color: white;
+    padding-bottom: 30px;
 }
 
 
 /*MECANICA*/
 
-#bodyAbanderados.mecanica, 
+#bodyAbanderados.mecanica,
 #bodyAbanderados.comenzar {
     background: #f2f2f2;
     min-height: 400px;
@@ -172,27 +204,26 @@ a {
     height: auto;
     padding: 50px;
 }
+
 #bodyAbanderados.comenzar .content {
     width: 50%;
     height: auto;
     padding: 50px 0;
 }
+
 .content::after {
     content: '';
     clear: both;
     width: 100%;
     display: block;
 }
+
 #bodyAbanderados.mecanica .content .col50,
-#bodyAbanderados.comenzar .content col50 {
+#bodyAbanderados.comenzar .content .col50 {
     width: 50%;
     height: auto;
     position: relative;
     float: left;
-}
-
-.col50 p.legalesAbanderados {
-    padding: 20px 40px 20px 0;
 }
 
 #bodyAbanderados.mecanica .content h1,
@@ -212,12 +243,42 @@ a {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
 
-#bodyAbanderados.mecanica .content .col50 p 
-#bodyAbanderados.comenzar .content .col50 h4{
+#bodyAbanderados.mecanica .content .col50 p,
+#bodyAbanderados.comenzar .content .col50 h4 {
     color: #242021;
     font-size: 16px;
     font-family: Lato, Arial, Helvetica, sans-serif;
     line-height: 22px;
+}
+
+.containerAir {
+    clear: both;
+    padding: 30px 40px;
+    min-height: 500px;
+    padding: 40px;
+}
+
+#mecanica {
+    clear: both;
+    padding: 30px 50px;
+}
+
+.featured #mecanica.container .col50 h4 {
+    color: #E30B17;
+    font-size: 26px;
+    padding: 20px 0 0px;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+}
+
+.featured #mecanica.container .col50 p {
+    color: #242021;
+    font-size: 16px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+.col50 p.legalesAbanderados {
+    padding: 20px 40px 20px 0;
 }
 
 .col50 .faq {
@@ -246,13 +307,50 @@ a {
 }
 
 .minWidthAvailable {
-    width: 80%;
+    width: 90%;
+    max-width: 1336px;
     margin: 0 auto;
     background: white;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
+}
+
+.boxShadowCoca {
+    padding: 40px;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*RANKING*/
+
+#ranking table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#ranking p {
+    padding-bottom: 40px;
+}
+
+#ranking table thead {
+    color: #E30B17;
+    font-family: Lato-Bold, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+#ranking table td {
+    padding: 15px 0;
+}
+
+#ranking table tbody tr.bold td {
+    font-weight: bold;
+    font-family: Lato-Bold;
+}
+
+#ranking table tbody tr {
+    border-top: 1px solid #D8D8D8;
+    text-align: center;
 }
 
 
@@ -272,33 +370,28 @@ a {
     text-align: center;
 }
 
-#footerAbanderados::after {
-    content: '';
-    clear: both;
-    width: 100%;
-    display: block;
+#footerAbanderados h2 {
+    font-size: 20px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    color: #adadb2;
+    padding: 10px 0 30px;
 }
 
-#footerAbanderados h2 {
-    font-weight: normal;
-    font-size: 15px;
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
-    color: #908e8e;
-    padding: 10px 0 30px;
+#footerAbanderados h2 strong {
+    font-family: Lato-Regular, Arial, Helvetica, sans-serif;
 }
 
 #footerAbanderados .contactItem h4 {
     color: #908e8e;
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    float: left;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px;
 }
 
 #footerAbanderados .contactItem h5 {
     color: white;
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    float: left;
+    font-size: 14px;
 }
 
 #footerAbanderados .contactItem h5 {
@@ -312,43 +405,52 @@ a {
     padding: 10px;
     min-height: 50px;
 }
+
 #form.contenido {
-    padding:30px 0px;
+    padding: 30px 0px;
     width: 98%;
     border-right: 1px solid #e6e6e6;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
+
 div.bloqueParticipante {
     width: 100%;
     padding: 30px 0;
     clear: both;
 }
+
 #form.contenido.lado {
-    padding:80px 0px;
-    border-right:0px;
+    padding: 80px 0px;
+    border-right: 0px;
 }
+
 #form.contenido .campoCoca {
     padding: 10px 30px;
-    float:left;
+    float: left;
 }
+
 #form.contenido .campoCoca.ticketForm {
     text-align: center;
 }
+
 #form.contenido .campoCoca span {
-    font-size:12px;
-    color:#989898;
+    font-size: 12px;
+    color: #989898;
 }
+
 #form.contenido .campoCoca span.leyenda {
-    color:#bf0808;
+    color: #bf0808;
     padding: 5px 0;
 }
+
 #form.contenido .campoCoca span.titleTickeF {
     text-align: center;
     color: black;
     text-align: center;
 }
+
 #form.contenido .campoCoca input {
-    font-size:13px;
+    font-size: 13px;
     padding: 4px;
     margin-top: 5px;
     -webkit-border-radius: 3px;
@@ -356,6 +458,7 @@ div.bloqueParticipante {
     border-radius: 3px;
     width: 100%;
 }
+
 .col50.box {
     background: white;
     border-radius: 10px 10px 10px 10px;
@@ -364,45 +467,56 @@ div.bloqueParticipante {
     border: 0px;
     width: 80%;
 }
+
 .contentDetails {
     padding: 100px;
 }
+
 .contentDetails p {
     padding: 50px 0;
     font-family: Lato, Arial, Helvetica, sans-serif;
 }
+
 span.highlightText {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
+
 #logoAbanderados.startTrivia {
     top: 0px;
     left: 80px;
 }
+
 div#test.btnCoca {
-    position:initial;
+    position: initial;
     text-align: center;
 }
+
 div#test.btnCoca span {
     color: white;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-size: 15px;
     text-align: center;
 }
+
 #countdown {
     float: right;
 }
+
 .question p {
-    color:#E30B17;
-    font-size:20px;
+    color: #E30B17;
+    font-size: 20px;
 }
+
 #wcCuestionario1_rblOpciones.promo_respuestas {
     font-size: 20px;
     line-height: 40px;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
+
 h5 {
-    color:black;
+    color: black;
 }
+
 .bloqueParticipante a .btnCoca {
     font-size: 15px;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
