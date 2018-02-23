@@ -251,9 +251,26 @@ a {
     -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
 }
+/*REGISTRO*/
+.registroClass {
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
+}
+div#test.btnCoca.registrobtn {
+    position:initial;
+    text-align: center;
+    margin: 20px auto;
+}
+.ticketBloque {
+    margin-top: 100px;
+}
 /*COMENZAR TRIVIA*/
 #bodyAbanderados.comenzar {
-    background: url("/Users/carinagonzalez/Desktop/coca/Trivia/img/Coke_assets_1.jpg");
+    background: url("/Users/vn0t8wo/Desktop/CocaCola/ws/Trivia/Trivia/img/Coke_assets_1.jpg") no-repeat;
     min-height: 400px;
     padding: 25px 0 0 0;
 }
@@ -271,7 +288,7 @@ a {
 
 /*QUESTIONS TRIVIA*/
 #bodyAbanderados.questionsTrivia {
-    background: url("/Users/carinagonzalez/Desktop/coca/Trivia/img/Coke_assets_1.jpg");
+    background: url("/Users/vn0t8wo/Desktop/CocaCola/ws/Trivia/Trivia/img/Coke_assets_2.jpg") no-repeat;
     min-height: 400px;
     padding: 25px 0 0 0;
 }
@@ -373,9 +390,11 @@ div.bloqueParticipante {
 #form.contenido.lado {
     padding:80px 0px;
     border-right:0px;
+    text-align: center;
+    margin: 0 auto;
 }
 #form.contenido .campoCoca {
-    padding: 10px;
+    padding: 10px 20px;
     float:left;
     max-width: 250px;
     width: 100%;
@@ -396,7 +415,7 @@ div.bloqueParticipante {
     width: 0;
 }
 #form.contenido .campoCoca.ticketForm span {
-    color:black;
+    color:#5a5a5a;
     padding-left: 10px;
     font-size: 14px;
 }
@@ -414,15 +433,16 @@ div.bloqueParticipante {
     text-align: center;
 }
 #form.contenido .campoCoca input, select {
-    font-size:18px;
+    font-size:13px;
     margin-top: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid #989890;
-    padding: 4px;
+    padding: 8px;
     width: 100%;
     text-align: center;
+    color:black;
 }
 #form.contenido .campoCoca select {
     width: 32.888%;
@@ -456,11 +476,6 @@ div#test.btnCoca {
     position:initial;
     text-align: center;
 }
-div#test.btnCoca.registrobtn {
-    position:initial;
-    text-align: center;
-    margin: 0 auto;
-}
 div#test.btnCoca span {
     color: white;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -489,6 +504,9 @@ h5 {
     margin: 40px 0;
 }
 .bloqueParticipante.textRemember {
-text-align: center;
-font-size: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+.bloqueParticipante.textRemember span {
+    font-weight: 900;
 }
