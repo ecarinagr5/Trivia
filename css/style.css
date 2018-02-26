@@ -529,7 +529,7 @@ input#test.questionsT {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 #form.contenido .campoCoca {
-    padding: 0px 12px;
+    padding: 10px 12px;
     float: left;
     width: 45%;
 }
@@ -872,7 +872,7 @@ div#test.btnCoca.results p  {
         border-right: 0px;
     }
     #form.contenido .campoCoca {
-        padding: 0px;
+        padding: 10px 0px;
         width: 90%;
     }
     #form.contenido.lado {
