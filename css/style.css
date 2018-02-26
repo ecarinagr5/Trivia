@@ -836,15 +836,17 @@ h5 {
 }
 #bodyAbanderados.results p.recordText {
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     padding: 20px 0;
 }
 #bodyAbanderados.results p.recordText span {
     font-size: 30px;
     line-height: 2px;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
 #bodyAbanderados.results p.recordText .reduce {
     font-size: 20px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 #bodyAbanderados.results .lineClass {
     text-decoration: underline;
