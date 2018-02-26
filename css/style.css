@@ -15,9 +15,6 @@
 a {
     text-decoration: none;
 }
-input[type=text]:focus {
-    border: 1px solid red;
-}
 
 h1.titleFeatured {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
@@ -844,12 +841,10 @@ div#test.btnCoca.results p  {
    font-size: 15px;
    text-align: center;
 }
-#wcCuestionario1_RequiredFieldValidator2 {
+.validatorClass {
     color: #E30B17;
 }
-#wcCuestionario1_RegularExpressionValidator2 {
-    color: #E30B17;
-}
+
 /*Responsive*/
 @media screen and (max-width: 640px) {
     /*Resultados*/ 
