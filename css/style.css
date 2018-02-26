@@ -162,13 +162,13 @@ h1.titleAbanderados {
 }
 
 #bodyAbanderados.home .featured {
-    padding: 50px 0 20px 100px;
+    padding: 50px 0 20px 0px;
     min-height: 600px;
-    background: url(../img/home-img01.jpg) no-repeat;
+    background: url(../img/home-img01.jpg) no-repeat right top;
 }
 
-#featuredContent {
-    padding-bottom: 50px;
+#featuredContent.col50 {
+    padding: 0 0 50px 100px;
 }
 
 .content {
@@ -192,8 +192,6 @@ h1.titleAbanderados {
 
 #bodyAbanderados.legales {
     background: #f2f2f2;
-    min-height: 400px;
-    padding: 25px 0;
 }
 .legalesAbanderados {
     line-height: 26px;
@@ -207,7 +205,7 @@ h1.titleAbanderados {
 #bodyAbanderados.mecanica {
     background: #f2f2f2;
     min-height: 400px;
-    padding: 25px 0;
+    /* padding: 25px 0; */
 }
 
 #bodyAbanderados.registro .content {
@@ -265,12 +263,12 @@ h1.titleAbanderados {
 .containerAir {
     clear: both;
     padding: 30px 50px;
-    min-height: 500px;
+    /* min-height: 500px; */
 }
 .ticketBloque {
     margin-top: 100px;
 }
-
+/*FIN definicones repetidas*/
 #mecanica {
     clear: both;
     padding: 30px 50px;
@@ -722,7 +720,37 @@ h5 {
 .bloqueParticipante.textRemember span {
     font-weight: 900;
 }
-
+@media screen and (max-width: 1024px) {
+    #featuredContent.col50 {
+        width: 70%;
+    }
+    #logoAbanderados {
+        right: 90px;
+    }
+    .clearAbanderados {
+        width: 14% !important;
+    }
+    #footerAbanderados h2 {
+        padding: 10px 50px 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .legales .col50 {
+        width: 100% !important;
+    }
+    #mecanica .col50 {
+        width: 100%;
+    }
+    .clearAbanderados {
+        width: 10% !important;
+    }
+    #logoAbanderados {
+        right: 40px;
+    }
+    .preguntasFrecuentes .col50 {
+        width: 100% !important;
+    }
+}
 @media screen and (max-width: 640px) {
     #ranking table td {
         float: left;
@@ -764,6 +792,11 @@ h5 {
     }
     #ranking table td:nth-child(6)::before {
         content: 'Hora:';
+    }
+    h1.titleAbanderados {
+        line-height: 35px;
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
     #bodyAbanderados.registro .content .col50 {
         width: 100%;
