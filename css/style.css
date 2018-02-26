@@ -60,21 +60,12 @@ h1.titleAbanderados {
     position: absolute;
     top: 0px;
     right: 200px;
-}
-
-#logoAbanderados {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 0px;
-    right: 200px;
     z-index: 1;
 }
 
 #headerAbanderados #navMainAbanderados {
     padding: 15px 0;
 }
-
 #headerAbanderados #navMainAbanderados li {
     display: block;
     float: left;
@@ -400,8 +391,6 @@ h1.titleAbanderados {
     border-top: 1px solid #D8D8D8;
     text-align: center;
 }
-
-
 /*REGISTRO*/
 .registroClass {
     margin: 0 auto;
@@ -411,7 +400,6 @@ h1.titleAbanderados {
     -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
 }
-
 div#test.btnCoca.registrobtn {
     position: initial;
     text-align: center;
@@ -482,8 +470,6 @@ input#test.questionsT {
     color: #f2f2f2;
     margin-top: 40px;
 }
-
-
 /*FOOTER*/
 
 .clearContent {
@@ -855,10 +841,51 @@ h5 {
 }
 div#test.btnCoca.results {
     position: initial;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 div#test.btnCoca.results p  {
    padding: 0;
    font-size: 15px;
    text-align: center;
+}
+/*Responsive*/
+@media screen and (max-width: 640px) {
+    /*Resultados*/ 
+    #logoAbanderados {
+        right: 50px;
+    }
+    #bodyAbanderados .col50 {
+        width: 100%;
+    }
+    #bodyAbanderados.results .resultsFeature {
+        padding: 100px 40px;
+    }
+    h1.titleFeatured {
+        text-align: center;
+    }
+    #bodyAbanderados.results .identifyClass.padding {
+        padding: 10px;
+    }
+    /*Registro*/
+    #bodyAbanderados.registro .content {
+        padding: 100px 40px;
+    }
+    #form.contenido {
+        padding: 0px;
+        border-right: 0px;
+    }
+    #form.contenido .campoCoca {
+        padding: 0px;
+        width: 90%;
+    }
+    #form.contenido.lado {
+        padding: 0px;
+        margin: -80px auto;
+    }
+    #form.contenido .campoCoca input[name="ticketInitial"] {
+        font-size: 18px;
+    }
+    div#test.btnCoca.registrobtn {
+        margin: 60px auto;
+    }
 }
