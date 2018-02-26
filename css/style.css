@@ -60,21 +60,12 @@ h1.titleAbanderados {
     position: absolute;
     top: 0px;
     right: 200px;
-}
-
-#logoAbanderados {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 0px;
-    right: 200px;
     z-index: 1;
 }
 
 #headerAbanderados #navMainAbanderados {
     padding: 15px 0;
 }
-
 #headerAbanderados #navMainAbanderados li {
     display: block;
     float: left;
@@ -143,7 +134,7 @@ h1.titleAbanderados {
 .btnCoca p {
     font-family: Lato, Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 0 40px !important;
+    padding: 0 !important;
     color: white !important;
 }
 
@@ -274,20 +265,6 @@ h1.titleAbanderados {
     padding: 30px 50px;
     /* min-height: 500px; */
 }
-/*Siguientes definicones repetidas*/
-.registroClass {
-    margin: 0 auto;
-    background: white;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
-}
-div#test.btnCoca.registrobtn {
-    position:initial;
-    text-align: center;
-    margin: 20px auto;
-}
 .ticketBloque {
     margin-top: 100px;
 }
@@ -412,10 +389,7 @@ div#test.btnCoca.registrobtn {
     border-top: 1px solid #D8D8D8;
     text-align: center;
 }
-
-
 /*REGISTRO*/
-
 .registroClass {
     margin: 0 auto;
     background: white;
@@ -424,30 +398,23 @@ div#test.btnCoca.registrobtn {
     -moz-box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.15);
 }
-
 div#test.btnCoca.registrobtn {
     position: initial;
     text-align: center;
-    margin: 20px auto;
+    margin: 40px auto;
 }
-
-.ticketBloque {
-    margin-top: 100px;
-}
-
-
 /*COMENZAR TRIVIA*/
 
 #bodyAbanderados.comenzar {
-    min-height: 400px;
+    min-height: 500px;
 }
 #bodyAbanderados.comenzar .bodyBackground {
     background: url(../img/Coke_assets_1.jpg) no-repeat;
-    padding: 25px 0 0 0;
-    max-width: 1366px;
-    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
 #bodyAbanderados.comenzar .content {
     width: 100%;
     height: auto;
@@ -467,8 +434,10 @@ div#test.btnCoca.registrobtn {
 
 #bodyAbanderados.questionsTrivia {
     background: url(../img/Coke_assets_2.jpg) no-repeat;
-    min-height: 400px;
-    padding: 25px 0 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #bodyAbanderados.questionsTrivia .content {
@@ -499,8 +468,6 @@ input#test.questionsT {
     color: #f2f2f2;
     margin-top: 40px;
 }
-
-
 /*FOOTER*/
 
 .clearContent {
@@ -555,51 +522,45 @@ input#test.questionsT {
 
 #form.contenido {
     padding: 30px 0px;
-    width: 98%;
+    width: 100%;
     border-right: 1px solid #e6e6e6;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
-
+#form.contenido .campoCoca {
+    padding: 10px 12px;
+    float: left;
+    width: 45%;
+}
 div.bloqueParticipante {
     width: 100%;
     padding: 30px 0;
     clear: both;
     overflow: auto;
 }
-
 #form.contenido.lado {
-    padding: 80px 0px;
+    padding: 80px 20px;
     border-right: 0px;
     text-align: center;
     margin: 0 auto;
 }
-
-#form.contenido .campoCoca {
-    padding: 10px 20px;
-    float: left;
-    max-width: 250px;
-    width: 100%;
+.bloqueParticipante select {
+    width: 32.3333%;
+    background: white;
 }
-
-#form.contenido .campoCoca.optionDateC {
-    padding: 10px;
-    float: left;
-    max-width: 500px;
-    width: 100%;
+.bloqueParticipante select option {
+    padding: 5px;
 }
-
-#form.contenido .campoCoca.ticketForm {
+#form.contenido .campoCoca.widthAllForm {
     text-align: center;
-    max-width: 500px;
-    width: 100%;
+    width: 90%;
 }
 
-#form.contenido .campoCoca.ticketForm input.aceptoClass {
+#form.contenido .campoCoca.widthAllForm input.aceptoClass {
     text-align: center;
-    width: 0;
+    width: 20px;
 }
 
-#form.contenido .campoCoca.ticketForm span {
+#form.contenido .campoCoca.widthAllForm span {
     color: #5a5a5a;
     padding-left: 10px;
     font-size: 14px;
@@ -631,6 +592,10 @@ div.bloqueParticipante {
     padding: 8px;
     width: 100%;
     text-align: center;
+    color:black;
+}
+#form.contenido .campoCoca input[name="ticketInitial"] {
+    font-size: 25px;
     color:black;
 }
 #form.contenido .campoCoca select {
@@ -721,13 +686,6 @@ div#test.btnCoca span {
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px;
 }
-.contentDetails {
-    padding: 100px;
-}
-.contentDetails p {
-    padding: 50px 0;
-    font-family: Lato, Arial, Helvetica, sans-serif;
-}
 span.highlightText {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
@@ -757,7 +715,7 @@ h5 {
 }
 .bloqueParticipante.textRemember {
     text-align: center;
-    font-size: 16px;
+    font-size: 19px;
 }
 .bloqueParticipante.textRemember span {
     font-weight: 900;
@@ -840,6 +798,9 @@ h5 {
         padding-top: 7px;
         padding-bottom: 7px;
     }
+    #bodyAbanderados.registro .content .col50 {
+        width: 100%;
+    }
 }
 
 /*RESULTADOS*/
@@ -858,8 +819,28 @@ h5 {
     font-size: 16px;
     text-align: justify;
 }
+#bodyAbanderados.results p.centrarText {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
+#bodyAbanderados.results p.recordText {
+    text-align: center;
+    font-size: 10px;
+    padding: 20px 0;
+}
+#bodyAbanderados.results p.recordText span {
+    font-size: 30px;
+    line-height: 2px;
+}
+#bodyAbanderados.results p.recordText .reduce {
+    font-size: 20px;
+}
 #bodyAbanderados.results .lineClass {
     text-decoration: underline;
+    -webkit-text-decoration-color: red; /* Safari */    
+    text-decoration-color: red;
+    text-indent: 150px;
 }
 #bodyAbanderados.results .bold {
     font-weight: bold;
@@ -867,32 +848,95 @@ h5 {
 #bodyAbanderados.results .identifyClass {
     color: white;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
 }
-p.identifyClass.dateHour {
-    font-size: 10px;
+#bodyAbanderados.results .identifyClass.padding {
+    padding: 10px 40px;
 }
-div.containerRanking {
+#containerRanking {
     width: 100%;
     text-align: center;
     overflow: auto;
+    margin: 0 auto;
 }
-div.rankingP {
+#containerRanking p {
     width: 50%;
+    color:#E30B17;
     float:left;
-    text-align: center;
-    line-height: 0;
 }
 div#test.btnCoca.results {
     position: initial;
-    text-align: center;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 div#test.btnCoca.results p  {
    padding: 0;
    font-size: 15px;
+   text-align: center;
 }
-div.rankingP p {
-   color:red;
+.validatorClass {
+    color: #E30B17;
+}
+
+/*Responsive*/
+@media screen and (max-width: 640px) {
+    /*Resultados*/ 
+    #logoAbanderados {
+        right: 50px;
+    }
+    #bodyAbanderados .col50 {
+        width: 100%;
+    }
+    #bodyAbanderados.results .resultsFeature {
+        padding: 100px 40px;
+    }
+    h1.titleFeatured {
+        text-align: center;
+    }
+    #bodyAbanderados.results .identifyClass.padding {
+        padding: 10px;
+    }
+    /*Registro*/
+    #bodyAbanderados.registro .content {
+        padding: 100px 40px;
+    }
+    #form.contenido {
+        padding: 0px;
+        border-right: 0px;
+    }
+    #form.contenido .campoCoca {
+        padding: 10px 0px;
+        width: 90%;
+    }
+    #form.contenido.lado {
+        padding: 0px;
+        margin: -80px auto;
+    }
+    #form.contenido .campoCoca input[name="ticketInitial"] {
+        font-size: 18px;
+    }
+    div#test.btnCoca.registrobtn {
+        margin: 60px auto;
+    }
+    #logoAbanderados.startTrivia {
+        left: 200px;
+    }
+    #bodyAbanderados.comenzar .content .col50 {
+        width: 90%;
+    }
+    #bodyAbanderados.comenzar .content {
+        padding: 100px 0px;
+    }
+    #bodyAbanderados.comenzar .content .col50.box {
+        margin: 20px;
+    }
+    .contentDetails {
+        padding: 100px 30px;
+    }
+    div#test.btnCoca {
+        margin: 0 auto;
+    }
+    #bodyAbanderados.questionsTrivia .content .col50 {
+        width: 100%;
+    }
 }
