@@ -688,13 +688,6 @@ div#test.btnCoca span {
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px;
 }
-.contentDetails {
-    padding: 100px;
-}
-.contentDetails p {
-    padding: 50px 0;
-    font-family: Lato, Arial, Helvetica, sans-serif;
-}
 span.highlightText {
     font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
@@ -887,5 +880,26 @@ div#test.btnCoca.results p  {
     }
     div#test.btnCoca.registrobtn {
         margin: 60px auto;
+    }
+    #logoAbanderados.startTrivia {
+        left: 200px;
+    }
+    #bodyAbanderados.comenzar .content .col50 {
+        width: 90%;
+    }
+    #bodyAbanderados.comenzar .content {
+        padding: 100px 0px;
+    }
+    #bodyAbanderados.comenzar .content .col50.box {
+        margin: 20px;
+    }
+    .contentDetails {
+        padding: 100px 30px;
+    }
+    div#test.btnCoca {
+        margin: 0 auto;
+    }
+    #bodyAbanderados.questionsTrivia .content .col50 {
+        width: 100%;
     }
 }
