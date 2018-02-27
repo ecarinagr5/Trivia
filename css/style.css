@@ -92,7 +92,7 @@ h1.titleAbanderados {
 
 #headerAbanderados #navMainAbanderados li a:hover~span {
     animation: ul 0.2s ease-out;
-    background: red;
+    background: #E30B17;
 }
 
 @keyframes ul {
@@ -406,7 +406,11 @@ div#test.btnCoca.registrobtn {
 /*COMENZAR TRIVIA*/
 
 #bodyAbanderados.comenzar {
-    min-height: 500px;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #130D0D;
 }
 #bodyAbanderados.comenzar .bodyBackground {
     background: url(../img/Coke_assets_1.jpg) no-repeat;
@@ -433,6 +437,10 @@ div#test.btnCoca.registrobtn {
 /*QUESTIONS TRIVIA*/
 
 #bodyAbanderados.questionsTrivia {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
     background: url(../img/Coke_assets_2.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -546,6 +554,7 @@ div.bloqueParticipante {
 .bloqueParticipante select {
     width: 32.3333%;
     background: white;
+    height: 34px;
 }
 .bloqueParticipante select option {
     padding: 5px;
@@ -811,6 +820,7 @@ h5 {
     padding: 50px 0 20px 100px;
     min-height: 600px;
     background: url(../img/home-img01.jpg) no-repeat;
+    background-size: 100%;
 }
 #bodyAbanderados.results p {
     color:white;
@@ -826,20 +836,22 @@ h5 {
 }
 #bodyAbanderados.results p.recordText {
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     padding: 20px 0;
 }
 #bodyAbanderados.results p.recordText span {
     font-size: 30px;
     line-height: 2px;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
 }
 #bodyAbanderados.results p.recordText .reduce {
     font-size: 20px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 #bodyAbanderados.results .lineClass {
     text-decoration: underline;
-    -webkit-text-decoration-color: red; /* Safari */    
-    text-decoration-color: red;
+    -webkit-text-decoration-color: #E30B17; /* Safari */    
+    text-decoration-color: #E30B17;
     text-indent: 150px;
 }
 #bodyAbanderados.results .bold {
@@ -879,6 +891,35 @@ div#test.btnCoca.results p  {
 }
 
 /*Responsive*/
+@media screen and (max-width: 1024px) { 
+    #form.contenido .campoCoca {
+        width: 85%;
+    }
+    div#test.btnCoca.registrobtn {
+        margin: 90px auto;
+    }
+    #bodyAbanderados.questionsTrivia .content .col50 {
+        width: 100%;
+    }
+    #bodyAbanderados.comenzar .content .col50 {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) { 
+    #form.contenido .campoCoca {
+        width: 85%;
+    }
+    div#test.btnCoca.registrobtn {
+        margin: 90px auto;
+    }
+    #bodyAbanderados.questionsTrivia .content .col50 {
+        width: 100%;
+    }
+    #bodyAbanderados.comenzar .content .col50 {
+        width: 80%;
+        padding: 180px 25px;  
+    }
+}
 @media screen and (max-width: 640px) {
     /*Resultados*/ 
     #logoAbanderados {
