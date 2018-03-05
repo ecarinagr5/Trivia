@@ -1,29 +1,19 @@
-<!DOCTYPE html>
-<html lang="es-mx">
-
-<head prefix="og: http://ogp.me/ns#">
-    <title>Superama a domicilio | Haz tus compras de supermercado en l&#237;nea</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="css/style.css" rel="stylesheet"/>
-    <script src="js/jquery-1.11.2.min.js"></script>
-
-</head>
-
-<body>
+﻿@{
+ViewBag.Title = "Abanderados Coca Cola";
+ViewBag.description = "Solicitar descripción";
+ViewBag.keywords ="";
+ViewBag.index = "index,follow";}
+<link href="~/Views/Micrositio/abanderados-coca-cola/menu-dinamico/css/menu-dinamico.css" rel="stylesheet">
+<link href="~/Views/Micrositio/abanderados-coca-cola/css/style.css" rel="stylesheet"/>
+<script src="~/Views/Micrositio/abanderados-coca-cola/menu-dinamico/js/consMenu.js" charset="utf-8"></script>
+<script>
+    consMenu("preguntas-frecuentes");
+</script>
     <div id="headerAbanderados">
-        <ul id="navMainAbanderados" class="maxWidthAvailable">
-            <li class="opcion"><a href="index.html">Inicio</a><span><span></li>
-            <li class="opcion"><a href="registro.html">Registro de tickets</a><span><span></li>
-            <li class="opcion"><a href="ranking.html">Ranking</a><span></span></li>
-            <li class="opcion"><a href="bases_y_legales.html">Bases y legales</a><span></span></li>
-            <li class="opcion"><a href="preguntas_frecuentes.html">Preguntas frecuentes</a><span></span></li>
-        </ul>
         <div class="spaceRed"></div>
         <div class="maxWidthAvailable">
             <div id="logoAbanderados">
-                <img src="img/logoCocaBalon.png" alt="Logo Coca Cola" width="150" height="150">
+                <img src="~/Views/Micrositio/abanderados-coca-cola/img/logoCocaBalon.png" alt="Logo Coca Cola" width="150" height="150">
             </div>
         </div>
     </div>
@@ -75,19 +65,14 @@
                         </div>
                         <div class="contactItem">
                             <h4>TWITTER</h4>
-                            <h5>@HolaCocaCola</h5>
+                            <h5>&#64HolaCocaCola</h5>
                         </div>
                     </div>
                 </div>
             </div>
     </div>
-
-</body>
-
 <script>
     $(window).load(function() {
-        //Fires when the page is loaded completely
-        // alert("window is loaded");
         var question = $('.question');
         question.on('click', function () {
             var isActive = $('#' + this.id).hasClass('active');
@@ -98,14 +83,8 @@
                 $('.' + this.id).fadeIn();
             }
         });
-
     });
-    // $(document).ready(function() {
-
-    // Code to be executed
-//     alert("Document is ready");
-// });
 
 </script>
-
-</html>
+<script src="~/Views/Micrositio/abanderados-coca-cola/menu-dinamico/js/menuFunctions.js" charset="utf-8">
+</script>

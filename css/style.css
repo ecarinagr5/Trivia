@@ -12,12 +12,27 @@
     margin: 0;
 }
 
+
+/*----------------------------------------*\
+    # COLORES PARA MENU DINAMICO 
+\*----------------------------------------*/
+
+.menuSite > ul > li a{color:#ccc !important;}
+.menuSite > ul > li a:hover { color:#fff !important;}
+.menuSite-mobile{background: #383636}
+.menuSite-container,.menuSite > ul > li{background: #242021}
+.menuSite > ul > li:hover,.menuSite>ul>li>ul.normal-sub>li:hover,.hal-seleccion,.menuSite-mobile-icon:hover {background: #E30B17 !important}
+
+.col-xs-6.col-sm-9.col-md-9.col-lg-9.promociones {
+    height: 42px;
+}
+
 a {
     text-decoration: none;
 }
 
 h1.titleFeatured {
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif !important;
     font-size: 30px;
     color: white;
     text-transform: uppercase;
@@ -25,7 +40,7 @@ h1.titleFeatured {
 }
 
 h1.titleAbanderados {
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif !important;
     font-size: 30px;
     color: black;
     text-transform: uppercase;
@@ -42,7 +57,7 @@ h1.titleAbanderados {
 #headerAbanderados {
     background: #242021;
     width: 100%;
-    height: 90px;
+    height: 20px;
     position: relative;
 }
 
@@ -58,12 +73,12 @@ h1.titleAbanderados {
     width: 150px;
     height: 150px;
     position: absolute;
-    top: 0px;
+    top: -15px;
     right: 200px;
-    z-index: 1;
+    z-index: 999;
 }
 
-#headerAbanderados #navMainAbanderados {
+/* #headerAbanderados #navMainAbanderados {
     padding: 15px 0;
 }
 #headerAbanderados #navMainAbanderados li {
@@ -102,7 +117,7 @@ h1.titleAbanderados {
     100% {
         width: 90%;
     }
-}
+} */
 
 #bodyAbanderados .col50 {
     width: 50%;
@@ -117,7 +132,7 @@ h1.titleAbanderados {
 .btnCoca {
     background: #E30B17;
     width: 210px;
-    height: 25px;
+    height: 45px;
     position: relative;
     padding: 10px;
     border-radius: 43px 43px 43px 43px;
@@ -135,6 +150,7 @@ h1.titleAbanderados {
     font-family: Lato, Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 0 !important;
+    margin: 0 !important;
     color: white !important;
 }
 
@@ -154,11 +170,18 @@ h1.titleAbanderados {
     font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
+#bodyAbanderados p {
+    margin: 0 !important;
+}
+
 
 /*HOME*/
 
 #bodyAbanderados.home {
     background: #130D0D;
+}
+#bodyAbanderados.home .titleFeatured {
+    padding-right: 40%;
 }
 
 #bodyAbanderados.home .featured {
@@ -168,7 +191,8 @@ h1.titleAbanderados {
 }
 
 #featuredContent.col50 {
-    padding: 0 0 50px 100px;
+    padding: 0 100px 50px;
+    width: 100%;
 }
 
 .content {
@@ -176,7 +200,8 @@ h1.titleAbanderados {
 }
 
 #bodyAbanderados.home .featured p {
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 20px;
     color: white;
     padding-bottom: 30px;
 }
@@ -235,7 +260,7 @@ h1.titleAbanderados {
 
 #bodyAbanderados.registro .content h1,
 #bodyAbanderados.comenzar .content h1 {
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif !important;
     font-size: 25px;
     padding: 0;
     text-transform: uppercase;
@@ -248,7 +273,7 @@ h1.titleAbanderados {
     color: #E30B17;
     font-size: 36px;
     padding: 20px 0 0px;
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif !important;
 }
 
 #bodyAbanderados.registro .content .col50 p,
@@ -272,13 +297,14 @@ h1.titleAbanderados {
 #mecanica {
     clear: both;
     padding: 30px 50px;
+    background: white url(../img/Coke_product.jpg) no-repeat right top;
 }
 
 .featured #mecanica.container .col50 h4 {
     color: #E30B17;
     font-size: 26px;
     padding: 20px 0 0px;
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif !important;
 }
 
 .featured #mecanica.container .col50 p {
@@ -294,7 +320,7 @@ h1.titleAbanderados {
 
 .col50 .faq {
     color: #E30B17;
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif !important;
     padding: 20px 0 10px;
     width: 90%;
     border-bottom: 1px solid #ededed;
@@ -633,7 +659,7 @@ div.bloqueParticipante {
 }
 
 span.highlightText {
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif !important;
 }
 
 #logoAbanderados.startTrivia {
@@ -696,7 +722,7 @@ div#test.btnCoca span {
     border: 0px;
 }
 span.highlightText {
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif !important;
 }
 div#test.btnCoca {
     position: initial;
@@ -730,9 +756,6 @@ h5 {
     font-weight: 900;
 }
 @media screen and (max-width: 1024px) {
-    #featuredContent.col50 {
-        width: 70%;
-    }
     #logoAbanderados {
         right: 90px;
     }
@@ -741,6 +764,13 @@ h5 {
     }
     #footerAbanderados h2 {
         padding: 10px 50px 30px;
+    }
+    #mecanica {
+        background-size: 50%;
+        background-position: right top;
+    }
+    #bodyAbanderados.home .titleFeatured {
+        padding-right: 20%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -759,6 +789,9 @@ h5 {
     .preguntasFrecuentes .col50 {
         width: 100% !important;
     }
+    #mecanica {
+        background: white;
+    }
 }
 @media screen and (max-width: 640px) {
     #ranking table td {
@@ -776,7 +809,6 @@ h5 {
     #ranking table td:nth-child(1) {
         padding-top: 10px;
     }
-  
     #ranking table td:nth-child(6) {
         padding-bottom: 10px;
     }
@@ -810,6 +842,14 @@ h5 {
     #bodyAbanderados.registro .content .col50 {
         width: 100%;
     }
+    #featuredContent.col50 {
+        padding: 0 50px 50px;
+        width: 100%;
+    }
+    #bodyAbanderados.home .titleFeatured {
+        padding-top: 50px;
+        padding-right: 0%;
+    }
 }
 
 /*RESULTADOS*/
@@ -842,7 +882,7 @@ h5 {
 #bodyAbanderados.results p.recordText span {
     font-size: 30px;
     line-height: 2px;
-    font-family: Gotham, Lato, Arial, Helvetica, sans-serif;
+    font-family: Gotham, Lato, Arial, Helvetica, sans-serif !important;
 }
 #bodyAbanderados.results p.recordText .reduce {
     font-size: 20px;
