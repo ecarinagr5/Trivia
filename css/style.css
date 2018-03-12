@@ -46,6 +46,15 @@ h1.titleAbanderados {
     text-transform: uppercase;
     line-height: 50px;
 }
+h1.titleAbanderados.bases {
+    margin-bottom: 0;
+    line-height: 22px;
+}
+
+.footerLegalCoca {
+    max-width: 842px;
+    margin: 0 auto;
+}
 
 .maxWidthAvailable {
     max-width: 1366px;
@@ -220,6 +229,18 @@ h1.titleAbanderados {
 }
 .legalesAbanderados {
     line-height: 26px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-family: Lato-Light, Arial, Helvetica, sans-serif;
+    color: #404040;
+}
+.legalesAbanderados.bulletCoca {
+    padding-left: 50px;
+    padding-right: 100px;
+}
+.legalesAbanderados.bulletCoca span {
+    margin-left: -23px;
+    padding-right: 15px;
 }
 .legalesAbanderados strong {
     font-family: Lato-Bold, Arial, Helvetica, sans-serif;
@@ -514,7 +535,7 @@ input#test.questionsT {
 
 #footerAbanderados {
     background: #2b2929;
-    padding: 20px 0 20px;
+    padding: 10px 0 20px;
     text-align: center;
 }
 
@@ -522,7 +543,9 @@ input#test.questionsT {
     font-size: 20px;
     font-family: Lato, Arial, Helvetica, sans-serif;
     color: #adadb2;
-    padding: 10px 0 30px;
+    padding: 10px 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #footerAbanderados h2 strong {
@@ -944,6 +967,9 @@ div#test.btnCoca.results p  {
     #bodyAbanderados.comenzar .content .col50 {
         width: 90%;
     }
+    #contactAbanderados .contactItem {
+        width: 18.6%;
+    }
 }
 @media screen and (max-width: 768px) { 
     #form.contenido .campoCoca {
@@ -957,7 +983,10 @@ div#test.btnCoca.results p  {
     }
     #bodyAbanderados.comenzar .content .col50 {
         width: 80%;
-        padding: 180px 25px;  
+        padding: 180px 25px;
+    }
+    #contactAbanderados .contactItem {
+        width: 21.5%;
     }
 }
 @media screen and (max-width: 640px) {
@@ -1019,5 +1048,23 @@ div#test.btnCoca.results p  {
     }
     #bodyAbanderados.questionsTrivia .content .col50 {
         width: 100%;
+    }
+    #contactAbanderados .contactItem {
+        width: 100%;
+    }
+    #contactAbanderados .contactItem.clearAbanderados {
+        display: none;
+    }
+    #contactAbanderados .contactItem h4 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    #contactAbanderados .contactItem h5 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    #footerAbanderados h2 {
+        margin-top: 0;
+        padding-top: 0;
     }
 }
